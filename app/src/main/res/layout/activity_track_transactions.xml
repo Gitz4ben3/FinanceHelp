@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:backgroundTint="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".TrackTransactions">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="35sp"
+        android:textStyle="bold|normal"
+        android:textColor="#FF6B35"
+        android:text="@string/add_latest_transactions"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:id="@+id/explanations"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="3dp"
+        android:elevation="3dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="10.5sp"
+            android:textColor="#33C648"
+            android:text="@string/explanation"
+            tools:ignore="SmallSp" />
+
+    </androidx.cardview.widget.CardView>
+    <Spinner
+        android:id="@+id/budgetSpinner"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/explanations"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+        android:id="@+id/transactionAmount"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColorHint="#555555"
+        android:drawableStart="@drawable/money"
+        android:textColor="#5B7C99"
+        android:layout_below="@id/budgetSpinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edt_style"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:drawablePadding="5dp"
+        android:hint="@string/amount"
+        tools:ignore="LabelFor,TextFields"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transactionAmount"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/submit"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/save_transaction"
+        android:textAllCaps="false" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/recyclerView"
+        android:scrollbars="vertical"
+        android:layout_margin="10dp"
+        android:layout_below="@id/submit"
+        />
+</RelativeLayout>

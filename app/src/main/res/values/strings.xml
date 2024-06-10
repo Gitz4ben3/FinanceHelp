@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">FinanceHelp</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="acc">Don\'t have an Account? Sign Up</string>
+    <string name="gross_pay">Gross pay</string>
+    <string name="net_monthly_income">Net monthly income</string>
+    <string name="groceries">Groceries</string>
+    <string name="rent_mortgage">Rent/Mortgage</string>
+    <string name="housing_utilities">Housing utilities (electricity, wate..)</string>
+    <string name="housing_and_health_insurance">Housing and health insurance</string>
+    <string name="debt_payments">Debt payments</string>
+    <string name="create_new_budget_plan">Create new budget plan</string>
+    <string name="add_transactions">Add transactions</string>
+    <string name="analyze_bank_statement">Analyze bank statement</string>
+    <string name="view_amp_extract_report"><![CDATA[View & extract report]]></string>
+    <string name="better_budgeting">Better budgeting</string>
+    <string name="budget_plan">Create new budget plan</string>
+    <string name="net_income">Enter the budget amount</string>
+    <string name="submit">Submit</string>
+    <string name="default_notification_channel_id" translatable="false">reminder_channel</string>
+    <string name="add_latest_transactions">Add latest transactions</string>
+    <string name="explanation">Necessities: rent or mortgage, car payments, gas, electric, groceries, and etc….\nEntertainment: dining out, travel, shopping, self-care, and hobbies.\nSavings: rainy-days, stocks, debt payment, and 401K.</string>
+    <string name="money_in">Money-in</string>
+    <string name="money_out">Money-out</string>
+    <string name="amount">Transaction amount</string>
+    <string name="save_transaction">Save transaction</string>
+    <string name="select_budget_plan">Select budget plan</string>
+    <string name="reset_password">Reset password</string>
+    <string name="send_password_reset_email">Send password reset email</string>
+    <string name="create_account">Create Account</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="upload_bank_statement">Upload bank statement</string>
+    <string name="enter_bill_description">Enter bill description</string>
+    <string name="create_auto_bill_reminder">Create auto bill reminder</string>
+    <string name="enter_the_day_of_the_month_for_the_reminder">Enter the day of the month for the reminder</string>
+    <string name="generate_report">Generate Report</string>
+    <string name="view_and_extract_transaction_report">View and extract transaction report</string>
+    <string name="enter_the_number_of_dependents">Enter the number of dependents</string>
+    <string name="enter_your_daily_limit">Enter your daily limit</string>
+    <string name="extract_your_budget_report">Extract your budget report</string>
+    <string name="repeat">repeat</string>
+    <string name="bill_title">Bill title</string>
+    <string name="generate_auto_bill_reminder">Generate auto bill reminder</string>
+    <string name="r25000">R25000</string>
+    <string name="select_budget_to_add_transaction_to">Select budget to add transaction to</string>
+    <string name="create_an_auto_bill_reminder">Create an auto bill reminder</string>
+    <string name="budget_with_us">Budget with us</string>
+    <string-array name="budget">
+        <item>Necessities</item>
+        <item>Entertainment</item>
+        <item>Savings</item>
+    </string-array>
+</resources>

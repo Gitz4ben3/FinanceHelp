@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:backgroundTint="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".BankStatementAnalyzer">
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:layout_centerHorizontal="true"
+      android:textStyle="bold"
+      android:textSize="28sp"
+      android:textColor="#ff6b35"
+      android:text="@string/create_an_auto_bill_reminder"
+      />
+  <EditText
+      android:id="@+id/desc"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="70dp"
+      android:layout_marginEnd="10dp"
+      android:inputType="text"
+      android:drawableStart="@drawable/description"
+      android:padding="10dp"
+      android:drawablePadding="3dp"
+      android:hint="@string/bill_title"
+      android:background="@drawable/edt_style"
+      android:layout_marginStart="10dp"
+      />
+
+    <DatePicker
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/calenderView"
+      android:layout_margin="20dp"
+      android:layout_below="@id/desc"
+      />
+  <RadioButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/repeat"
+      android:id="@+id/repeat"
+      android:layout_below="@id/calenderView"
+      android:layout_margin="20dp"
+      />
+
+  <Button
+      android:id="@+id/autoBill"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:layout_below="@id/repeat"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="10dp"
+      android:layout_marginBottom="10dp"
+      android:text="@string/create_auto_bill_reminder"
+      android:textAllCaps="false" />
+</RelativeLayout>

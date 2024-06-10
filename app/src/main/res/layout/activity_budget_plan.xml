@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:backgroundTint="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".BudgetPlan">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/budget_plan"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF6B35"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/netIncome"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColorHint="#555555"
+        android:textColor="#5B7C99"
+        android:layout_marginTop="200dp"
+        android:drawableStart="@drawable/money"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edt_style"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:drawablePadding="5dp"
+        android:hint="@string/net_income"
+        tools:ignore="LabelFor,TextFields" />
+    <EditText
+        android:id="@+id/numDependents"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColorHint="#555555"
+        android:textColor="#5B7C99"
+        android:drawableStart="@drawable/dependents"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/netIncome"
+        android:background="@drawable/edt_style"
+        android:inputType="number"
+        android:padding="10dp"
+        android:drawablePadding="5dp"
+        android:hint="@string/enter_the_number_of_dependents"
+        tools:ignore="LabelFor,TextFields" />
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/numDependents"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="18.5dp"
+        android:text="@string/submit"
+        android:textAllCaps="false" />
+</RelativeLayout>
